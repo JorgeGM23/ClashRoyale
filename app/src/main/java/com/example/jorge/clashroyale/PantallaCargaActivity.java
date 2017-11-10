@@ -44,6 +44,7 @@ public class PantallaCargaActivity extends AppCompatActivity {
                 }
             }
 
+            //LANZO LA ACTIVITY ELECCION --> ** ERROR ** DECLARAR LA ACTIVITY EN EL MANIFEST
             Intent i = new Intent(PantallaCargaActivity.this, ListaEleccionActivity.class);
             startActivity(i);
             finish();

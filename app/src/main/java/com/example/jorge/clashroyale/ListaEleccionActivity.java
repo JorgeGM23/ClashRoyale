@@ -52,7 +52,7 @@ public class ListaEleccionActivity extends AppCompatActivity {
 */
         AdaptadorPrimeraLista myAdaptor = new AdaptadorPrimeraLista(getApplicationContext(), listaCalidades);
         lvTipos.setAdapter(myAdaptor);
-/*
+
         lvTipos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -66,7 +66,7 @@ public class ListaEleccionActivity extends AppCompatActivity {
                 startActivity(e);
             }
         });
-        */
+
     }
 
 }
