@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DetalleCartaActivity"></activity>
+        <!--ERROR SOLUCIONADO -->
+        <activity android:name=".ListaEleccionActivity"></activity>
     </application>
 
 </manifest>
