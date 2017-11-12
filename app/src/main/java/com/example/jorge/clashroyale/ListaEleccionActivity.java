@@ -1,12 +1,14 @@
 package com.example.jorge.clashroyale;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -27,6 +29,8 @@ public class ListaEleccionActivity extends AppCompatActivity {
         AdaptadorPrimeraLista myAdaptor = new AdaptadorPrimeraLista(getApplicationContext(), listaCalidades);
         lvTipos.setAdapter(myAdaptor);
 
+
+
         lvTipos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -37,6 +41,8 @@ public class ListaEleccionActivity extends AppCompatActivity {
                 Intent e = new Intent(getApplicationContext(), ListaCartasActivity.class);
                 e.putExtra("calidad", calidad);
                 startActivity(e);
+                //TRANSICION PONER DESPUES DEL START
+                overridePendingTransition(R.anim.left_in, R.anim.left_out);
             }
         });
     }
